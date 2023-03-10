@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+void solve(){ 
+ int m, h;
+ cout<<"Enter mass and height:";
+ cin >> m >> h;
+ int BMI = m / (h * h);
+ if (BMI <= 18) {
+ cout<<"The person falls in 
+category:" << 1 << endl;
+ }
+ else if(BMI >= 19 && BMI <= 24) {
+ cout<<"The person falls in 
+category:" << 2 << endl;
+ }
+ else if(BMI >= 25 && BMI <= 29)
+ cout<<"The person falls in 
+category:" << 3 << endl;
+ else
+ cout<<"The person falls in 
+category:" << 4 << endl;
+}
+int main()
+{
+ int t ;
+ cout<<"Enter the number of testcases: ";
+ cin >> t;
+ while (t--){
+ solve();
+ } 
+ return 0;
+}

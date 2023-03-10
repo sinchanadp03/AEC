@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long int 
+int32_t main(){
+ int t;
+ cout<<"Enter the number of testcases:";
+ cin>>t;
+ while(t--)
+ {
+ int n,m,k;
+ cout<<"Enter the value od N, M, K:";
+ cin>>n>>m>>k;
+ m-=k;
+ if(n<=m)
+ cout<<"YES\n";
+ else
+ cout<<"NO\n";
+ }
+}
